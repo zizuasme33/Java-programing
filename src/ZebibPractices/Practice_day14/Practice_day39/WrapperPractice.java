@@ -25,6 +25,8 @@ public class WrapperPractice {
         double d = Double.parseDouble(name);
         short s = Short.parseShort(name);
         System.out.println("s = " + s + "  " + d + " " + nam);
+
+
         
         
     }

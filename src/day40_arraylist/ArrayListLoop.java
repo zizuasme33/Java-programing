@@ -15,7 +15,7 @@ public class ArrayListLoop {
 
         System.out.println("nums = " + nums);
         nums.remove(0);
-        System.out.println("nums = " + nums); // 0 index is gun
+        System.out.println("nums = " + nums); // 0 index is gone
 
 
       //  nums.remove(88); --> index 88 -> IndexOutOfBoundsException

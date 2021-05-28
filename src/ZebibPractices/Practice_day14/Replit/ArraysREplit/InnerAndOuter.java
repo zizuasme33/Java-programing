@@ -42,19 +42,37 @@ public class InnerAndOuter {
         //
         //output: false
 
-            for (int i = 0; i < inner.length; i++) {
-                // i =0 to i = length -1
-          //      if (Arrays.binarySearch(outer, inner[i]) < 0){
-                    System.out.println(false);
-                    return;
-//                    // we are in the last round loop
-//                }else if (i == inner.length-1) {
-//                    System.out.println(true);
-//
-             //  }
+        int count = 0;
 
+        for(int outerNum : inner){
+            for (int innerNum : outer) {
+                if (innerNum == outerNum ){
+                    count++;
+                    break;
+                }
             }
-      //  System.out.println(true);
+        }
+        if (count == inner.length){
+            System.out.println(true);
+        }else {
+            System.out.println(false);
+        }
+//     for (int i = 0; i < inner.length; i++) {
+//                 // i =0 to i = length -1
+//                 if (Arrays.binarySearch(outer, inner[i]) < 0){
+//                     System.out.println(false);
+//                     return;
+// //                    // we are in the last round loop
+// //                }else if (i == inner.length-1) {
+// //                    System.out.println(true);
+// //
+//                }
+
+//             }
+//         System.out.println(true);
+
+
+
 
     }
 

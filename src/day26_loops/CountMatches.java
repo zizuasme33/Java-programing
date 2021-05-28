@@ -3,7 +3,7 @@ package day26_loops;
 public class CountMatches {
     public static void main(String[] args) {
 
-        String word = "java";
+        String word = "java a";
         char letter = 'a';
         int count = 0;
 
@@ -14,9 +14,8 @@ public class CountMatches {
 
 
             }
+
         }
         System.out.println("Three are "+ count + " " + letter + " 'a in " + word);
-
-
     }
 }

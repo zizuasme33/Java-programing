@@ -7,7 +7,7 @@ public class MultiplicationTable {
 //        System.out.println(number + " x " + 1 + " = " + (number * 1));
 //        System.out.println(number + " x " + 2 + " = " + (number * 2));
 
-        int number = 15;
+        int number = 10;
 
         if (number < 1 || number > 10) {
             System.out.println("ERROR: invalid input");

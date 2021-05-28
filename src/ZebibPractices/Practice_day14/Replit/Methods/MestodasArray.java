@@ -10,6 +10,8 @@ public class MestodasArray {
 
         System.out.println(simpleRoomBook(true, 7, 2, 2019));
         System.out.println(uniqueChars("java"));
+     //   System.out.println(mergeStrings("wooden", "spoon"));
+
     }
 
     public static int[] populate(int[] r, int s) {
@@ -46,4 +48,23 @@ public class MestodasArray {
             return word;
 
         }
-     }
+    public static boolean isPalindrome(String check) {
+
+        // your code here
+        boolean result = false;
+
+
+        for (int i = 0; i < check.length() / 2; i++) {
+
+            if ((check.toLowerCase().charAt(i)) != check.toLowerCase().charAt(check.length() - 1 - i)){
+                return true;
+            }
+        }
+        return result;
+
+
+    }
+
+
+
+}

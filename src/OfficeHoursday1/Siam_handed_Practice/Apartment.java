@@ -1,4 +1,4 @@
-package OfficeHoursday1;
+package OfficeHoursday1.Siam_handed_Practice;
 
 public class Apartment {
     public static void main(String[] args) {
