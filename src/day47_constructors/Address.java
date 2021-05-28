@@ -8,12 +8,41 @@ public class Address {
     private String zipCode;
     private String country;
 
+    // constructor - automatically called
+    //Same name as Class name and no return type and special method
+    public Address() {
+        System.out.println("Address constructor");
+        street = "123 unknown st";
+        city = "Unknown";
+        state = "Unknown";
+        zipCode = "00000";
+    }
+        // public Address(street, city, state)
+        // second constructor, overload constructor -> provides shortcut to initialize variables
+        // in same statement : ex: Address ad = new Address ("8501 Tyco Rd 1A", "Vienna", "VA", "22182")
+        public Address (String street, String city, String state, String zipCode) {
+
+        this.street = street;
+        setStreet(street); // reuse the code in the setter method
+            this.city = city;
+            this.state = state;
+            this.zipCode = zipCode;
+
+        }
+
+
     public String getStreet() {
         return street;
     }
 
     public void setStreet(String street) {
-        this.street = street;
+        if (street.isEmpty() || street.length() > 50) {
+            System.out.println("ERROR: Invalid street");
+            // System.exit(0);
+        }else {
+            this.street = street;
+        }
+
     }
 
     public String getCity() {
