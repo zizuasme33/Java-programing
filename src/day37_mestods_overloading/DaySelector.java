@@ -49,6 +49,7 @@ public class DaySelector {
                 System.out.println("ERROR: Invalid day - " + day);
                 return null; // null means no object or no value , not the same as String word = ""; this is empty string
                             //     break; if we put break instead return will compile error
+
         }
 
      //   return null;  or here works

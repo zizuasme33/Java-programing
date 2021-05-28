@@ -1,3 +1,5 @@
+package ZebibPractices.Practice_day14.Practice;
+
 public class MultiplicationTable {
     public static void main(String[] args) {
         for (int outer = 1; outer <= 10; outer++) {

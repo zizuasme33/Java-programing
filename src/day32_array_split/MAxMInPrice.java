@@ -16,6 +16,7 @@ public class MAxMInPrice {
         System.out.println(Arrays.toString(prices));
         System.out.println(Arrays.toString(itemIDs));
 
+
         System.out.println("--------- Finding Max And Min prices ----------");
 
 
