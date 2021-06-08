@@ -10,6 +10,7 @@ public class Student {
     public Student (){
 
         System.out.println("No-Args constructor");
+        this.name = "java";
 
     }
 

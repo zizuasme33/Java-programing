@@ -3,6 +3,7 @@ package day47_constructors;
 public class StudentObjects {
 
     public static void main(String[] args) {
+
         Student st1 = new Student(); // runs no- ags constructor
         Student st2 = new Student(); // runs no- ags constructor
 
