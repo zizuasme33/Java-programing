@@ -1,6 +1,6 @@
 package day53_inheritance.tesla;
 
-public class ElectricCar {
+public class ElectricCar extends Object {
 
     private String make;
     private String model;
@@ -8,6 +8,7 @@ public class ElectricCar {
     private int year;
     private int range;
     private static int count; // all objects will share this variable
+    public static final int MAX_RANGE = 400;
 
 
     public ElectricCar(String make, String model, double price, int year, int range) {
@@ -17,6 +18,11 @@ public class ElectricCar {
         this.year = year;
         this.range = range;
         count++; // increase count by 1 - everytime new car is creating
+    }
+
+    public final void charge() {
+        System.out.println("Charging the electric car using plug-in ");
+        this.range = MAX_RANGE;
     }
 
     public static int getCount() {
