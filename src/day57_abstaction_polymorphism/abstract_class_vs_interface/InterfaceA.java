@@ -8,10 +8,12 @@ public interface InterfaceA {
     public static final String TYPE = "interface";
     double MAX_COUNT = 500; // this is also public static final
 
-    /** Constructor are not allowed in Interface **/
-//    public InterfaceA(){
-//     System.out.println("constructor is not welcome in Interface");
-//    }
+    /**
+     * ERROR: Interfaces CANNOT have constructors
+     public InterfaceA() {
+     System.out.println("constructor is not welcome in Interface");
+     }
+     */
 
     public abstract void abcMethodD(int num);
     /**
